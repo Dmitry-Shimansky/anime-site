@@ -1,4 +1,4 @@
-const preloader = () => {
+const slider = () => {
     const preloader = document.querySelector('.preloder');
 
     preloader.classList.add('active');
@@ -8,4 +8,4 @@ const preloader = () => {
     }, 1000);
 }
 
-preloader();
+slider();
