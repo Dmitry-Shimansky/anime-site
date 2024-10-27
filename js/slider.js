@@ -1,11 +1,15 @@
 const slider = () => {
-    const preloader = document.querySelector('.preloder');
-
-    preloader.classList.add('active');
-
-    setTimeout(() => {
-        preloader.classList.remove('active');
-    }, 1000);
+    const swiper = new Swiper ('.swiper', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        effect: 'fade',
+        speed: 1000
+    });
 }
 
 slider();
